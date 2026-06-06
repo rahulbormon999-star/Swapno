@@ -6,6 +6,8 @@
     <title>স্বপ্ন ব্যাখ্যা - AI ড্রিম ইন্টারপ্রিটার</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="/manifest.json">
+     <meta name="theme-color" content="#10a37f">
     <style>
         :root{
             --bg-color:#ffffff;
@@ -379,6 +381,14 @@
     }
 
     window.onload = () => { setReligion(selectedReligion); updateHistoryUI(); };
+    <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js")
+      .then(reg => console.log("PWA Ready"))
+      .catch(err => console.log(err));
+  });
+}
 </script>
 </body>
-                                                             </html>
+</html>
