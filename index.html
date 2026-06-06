@@ -22,8 +22,8 @@
         body{display:flex;height:100vh;background-color:var(--bg-color);color:var(--text-color);overflow:hidden;position:relative}
         .overlay{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.2);z-index:90}
         .overlay.active{display:block}
-        .sidebar{position:absolute;left:-300px;top:0;height:100%;width:280px;background-color:var(--sidebar-bg);border-right:1px solid var(--border-color);display:flex;flex-direction:column;transition:left .3s ease;z-index:100; padding-top:20%;}
-        .sidebar.open{left:0}
+        .sidebar{position:absolute;left:-300px;top:0;height:100%;width:280px;background-color:var(--sidebar-bg);border-right:1px solid var(--border-color);display:flex;flex-direction:column;transition:left .3s ease;z-index:100}
+        .sidebar.open{left:0; padding-top:10%}
         .sidebar-header{padding:30px 15px 15px 15px;display:flex;flex-direction:column;align-items:stretch;gap:10px;border-bottom:1px solid var(--border-color)}
         .religion-row{display:flex;gap:5px}
         .religion-btn{flex:1;padding:8px;border:1px solid var(--border-color);background:#fff;border-radius:5px;cursor:pointer;font-size:13px;transition:0.3s;font-family:var(--font-family)}
@@ -59,7 +59,7 @@
         .message-content{font-size:15px;white-space:pre-wrap}
         .message-wrapper.user .message-content{background-color:var(--user-msg-bg);padding:12px 18px;border-radius:20px;border-bottom-right-radius:4px}
         .message-wrapper.ai .message-content{padding:10px 5px;color:#202123}
-        .input-container{position:absolute;bottom:6%;left:0;width:100%;padding:15px 20px 20px;background:linear-gradient(180deg,rgba(255,255,255,0) 0%,#fff 25%);display:flex;justify-content:center}
+        .input-container{position:absolute;bottom:3%;left:0;width:100%;padding:15px 20px 20px;background:linear-gradient(180deg,rgba(255,255,255,0) 0%,#fff 25%);display:flex;justify-content:center}
         .input-box{width:100%;max-width:750px;display:flex;align-items:flex-end;border:1px solid var(--border-color);border-radius:20px;background-color:white;box-shadow:0 4px 15px rgba(0,0,0,0.08);padding:5px 10px}
         textarea{width:100%;max-height:180px;min-height:48px;padding:12px 10px;border:none;outline:none;resize:none;font-size:17px;background:transparent;overflow-y:auto;font-family:var(--font-family)}
         .send-btn{background-color:var(--accent);color:white;border:none;width:36px;height:36px;border-radius:10px;margin:6px 4px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s}
