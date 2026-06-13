@@ -132,24 +132,24 @@
             <button class="religion-btn active" id="btn-sanatan" onclick="setReligion('sanatan')">🕉️ সনাতন</button>
             <button class="religion-btn" id="btn-islam" onclick="setReligion('islam')">☪️ ইসলাম</button>
         </div>
-        <button class="new-chat-btn" onclick="startNewChat()">✦ নতুন স্বপ্ন</button>
+        <button class="new-chat-btn" onclick="startNewChat()">+ New Chating</button>
     </div>
     <div class="history-list" id="history-list"></div>
     <div class="clear-history" onclick="clearAllHistory()">
-        <i class="fa-solid fa-trash"></i> সব হিস্ট্রি মুছুন
+        <i class="fa-solid fa-trash"></i> All history delete 
     </div>
 </div>
 
 <div class="main-content">
     <div class="header">
         <button class="menu-btn" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
-        <h2 id="header-title" style="font-size:18px;font-weight:600;">🕉️ স্বপ্ন শাস্ত্র (সনাতন)</h2>
+        <h2 id="header-title" style="font-size:18px;font-weight:600;">🕉️ Sawpono sastro (Traditional)</h2>
     </div>
     <div class="chat-container" id="chat-container">
         <div class="welcome" id="welcome-screen">
             <div class="logo" id="center-logo">🕉️</div>
-            <h3>আপনার স্বপ্নের অর্থ জানুন</h3>
-            <p>নিচে আপনার স্বপ্নের কথা বিস্তারিত লিখুন</p>
+            <h3>Know the meaning of your dreams</h3>
+            <p>Write your dream in detail below</p>
         </div>
     </div>
     <div class="input-container">
@@ -364,8 +364,8 @@
         chatContainer.innerHTML = `
             <div class="welcome" id="welcome-screen">
                 <div class="logo" id="center-logo">${logo}</div>
-                <h3>আপনার স্বপ্নের অর্থ জানুন</h3>
-                <p>নিচে আপনার স্বপ্নের কথা বিস্তারিত লিখুন</p>
+                <h3>Know the meaning of your dreams</h3>
+                <p>Write your dream in detail below</p>
             </div>`;
         currentSessionId = null;
         if(window.innerWidth<768&&sidebar.classList.contains('open')) toggleSidebar();
