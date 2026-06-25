@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     if (!dream) return res.status(400).json({ error: 'স্বপ্নের বর্ণনা প্রয়োজন' });
 
     const API_KEYS = [
-        "AQ.Ab8RN6IgllBkpiRYTzGm78vDHIpKj9m2gzYra5c0vYPiGA7Ajw"
+        "AIzaSyBtqverNQCQMoevW6gqlxbuQb8oh609emI"
     ].filter(Boolean);
 
     if (API_KEYS.length === 0) {
