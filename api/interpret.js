@@ -43,7 +43,16 @@ export default async function handler(req, res) {
                     })
                 }
             );
-            if (apiRes.status === 429 || apiRes.status === 403) continue;
+          // চুল পাকনা শুরু
+            if (!apiRes.ok) {
+    const errText = await apiRes.text();
+
+    return res.status(apiRes.status).json({
+        error: errText
+    });
+            }
+
+            // চুল পাকনা শেষ 
             if (!apiRes.ok) {
                 const err = await apiRes.json();
                 throw new Error(err?.error?.message || `HTTP ${apiRes.status}`);
