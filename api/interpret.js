@@ -33,7 +33,7 @@ export default async function handler(req, res) {
     for (let i = 0; i < API_KEYS.length; i++) {
         try {
             const apiRes = await fetch(
-                `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEYS[i]}`,
+                `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEYS[i]}`,
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
