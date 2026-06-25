@@ -154,7 +154,7 @@
     </div>
     <div class="input-container">
         <div class="input-box">
-            <textarea id="user-input" placeholder="আপনার স্বপ্নের কথা লিখুন..." rows="1"
+            <textarea id="user-input" placeholder="Text your swapno..." rows="1"
                 oninput="autoResize(this)" onkeypress="handleEnter(event)"></textarea>
             <button class="send-btn" id="send-btn" onclick="sendMessage()">
                 <i class="fa-solid fa-arrow-up"></i>
@@ -275,7 +275,7 @@
         document.getElementById('btn-sanatan').classList.toggle('active', type==='sanatan');
         document.getElementById('btn-islam').classList.toggle('active', type==='islam');
         const logo = type==='sanatan'?'🕉️':'☪️';
-        const name = type==='sanatan'?'সনাতন':'ইসলাম';
+        const name = type==='sanatan'?'Traditional':'Islam';
         document.getElementById('header-title').innerText = `${logo} স্বপ্ন শাস্ত্র (${name})`;
         const cl = document.getElementById('center-logo');
         if(cl) cl.innerText = logo;
@@ -373,7 +373,7 @@
     }
 
     function clearAllHistory(){
-        if(confirm('সব হিস্ট্রি মুছে ফেলবেন?')){
+        if(confirm('Do you all history delete?')){
             chatSessions = [];
             localStorage.removeItem('dreamChatSessions');
             startNewChat();
